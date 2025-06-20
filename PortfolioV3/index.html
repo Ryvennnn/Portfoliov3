@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryven Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">   
+</head>
+<body>
+    <div class="calosc">
+        <div class="tlo">
+            <div class="przyciski">
+
+                <div id="przycisk_About_me" class="przycisk_About_me" onclick="zmiana_zakladki(zakladka_About_me)">
+                    <p><b>About me</b></p>
+                </div>
+                <div id="przycisk_Modelling" class="przycisk_Modelling" onclick="zmiana_zakladki(zakladka_Modelling)">
+                    <p><b>Modelling</b></p>
+                </div>
+                <div id="przycisk_Programming" class="przycisk_Programming" onclick="zmiana_zakladki(zakladka_Programming)">
+                    <p><b>Scripting</b></p>
+                </div>
+                <div id="przycisk_Contact_me" class="przycisk_Contact_me" onclick="zmiana_zakladki(zakladka_Contact_me)">
+                    <p><b>Contact me</b></p>
+                </div>
+            
+            </div>
+        </div>
+        <hr>
+
+        <div id="About_Me" style="display: block;">
+            
+                <h1>Ryven</h1>
+                <div class="Terminal">
+                <h2 style="color: rgb(44, 171, 86);" class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></h2>
+                </div>
+                <br>
+                <h3>Hi, I'm a 18 years old dedicated programmer and 3D modeler. I prioritize high quality as much as fast delivery of commissions.</h3>
+                <br>
+                <div class="Overall-Experience">
+                        <div class="Experience1">
+
+                        <h3><i>3D Modeling Skills: </i></h3>
+                            <b>Experience:</b>
+                            <ul>  <li>Modelling - 3 years</li>
+                            <li>Sculpting - 2 years</li>
+                            </ul>
+                            <b>Software:</b>
+                            <ul>
+                                <li>Blender</li>
+                                <li>Zbrush</li>
+                                <li>Quixel Mixer</li>
+                            </ul>
+                            <b>Additional Tools:</b>
+                            <ul>
+                                <li>Pen tablet for enhanced precision and quality</li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="Experience2">
+                            
+                        <h3><i>Programming skills: </i></h3>
+                            <b>Experience:</b>
+                            <ul>
+                                <li>Frontend <b>(HTML,CSS,JavaScript)</b> - 2 years</li>
+                                <li>Backend <b>(PHP,MYSQL)</b> - 2 years</li>
+                                <li>Roblox Studio's Lua - 1 year</li>
+                            </ul>
+                            <b>Previous Experience:</b>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Discord.js</li>
+                                <li>React.js</li>
+                            </ul>
+                        </div>
+                        <br><br>
+                    
+                    
+                        
+                </div>
+        </div>
+
+
+
+        <div id="Contact_Me" style="display: none;">
+            <img class="zdjecie_profilowe" src="TOM.jpg" alt="profile pricture">
+            <h2>If you have any questions, please contact me. I will answer as soon as possible!</h2>
+            <p>Contact info: </p>
+
+                <div class="Contact"> 
+                    <a id="Email" href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRtsnQzmzlpwSTRrWTQrkHrfMMkwSNbLdctmCgcxGtkNJjwxSDWzkVFHLbPfWhZrvtvTVXV" target="_blank" ><i class="fa-solid fa-envelope"></i></a></label> <br>
+                    <label>&nbsp;</label>
+                    <a id="Discord" href="https://discord.com/users/310136083847577602" target="_blank"><i class="fa-brands fa-discord fa-bounce"></i></a> </label> <Br>
+                </div>
+
+                <br><br>
+        </div>
+
+
+
+        <div id="wyskakujace_zdjecie">
+            <div id="wyskakujace_zdjecie_TLO"></div>
+            <div id="wyskakujace_zdjecie_kontener"></div>
+        </div>
+
+        <div id="Modelling" style="display: none;">
+            
+            <h2>Sculptures</h2>
+
+            <div id="Rzad_zdjec">
+                
+                <div id="Blok_zdjecia" onclick="zdjecie_popup('Zdjecia/Alien/Alien.png','Zdjecia/Alien/Alien2.png','Zdjecia/Alien/Alien3.png','Zdjecia/Alien/Alien5.png')">
+                    <img src="Zdjecia/Alien/Alien.png">
+                    <div>
+                        <p>The Sculpturd Torso of Alien from the Alien series</p>
+                    </div>
+                </div>
+                
+                <div id="Blok_zdjecia" onclick="zdjecie_popup('Zdjecia/Kaczka/Kaczka.png','Zdjecia/Kaczka/Kaczka1.png','Zdjecia/Kaczka/Kaczka3.png')">
+                    <img src="Zdjecia/Kaczka/Kaczka.png">
+                    <div>
+                        <p>Just a <b>DUCK</b></p>
+                    </div>
+                </div>
+
+                <div id="Blok_zdjecia" onclick="zdjecie_popup('Zdjecia/Sans/Sansportret1.png','Zdjecia/Sans/Sans2.png')">
+                    <img src="Zdjecia/Sans/Sansportret1.png">
+                    <div>
+                        <p>Sans from the Undertale</p>
+                    </div>
+                </div>
+
+                <div id="Blok_zdjecia" onclick="zdjecie_popup('Zdjecia/Turtle/Turtolo.png')">
+                    <img src="Zdjecia/Turtle/Turtolo.png">
+                    <div>
+                        <p>Cartoon Turtle</p>
+                    </div>
+                </div>
+            </div>            
+
+            <hr><h2>Other Projects</h2>
+
+            <div id="Rzad_zdjec">
+                
+                <div id="Blok_zdjecia" onclick="zdjecie_popup('Zdjecia/ODMgear/ODM.png','Zdjecia/ODMgear/ODM1.png','Zdjecia/ODMgear/ODM2.png','Zdjecia/ODMgear/ODM3.png','Zdjecia/ODMgear/ODM4.png','Zdjecia/ODMgear/ODM5.png')">
+                    <img src="Zdjecia/ODMgear/ODM.png">
+                    <div>
+                        <p>ODM gear inspired by anime series Attack on Titan</p>
+                    </div>
+                </div>
+
+                <div id="Blok_zdjecia" onclick="zdjecie_popup('Zdjecia/Shiganshina/Shiganshina.png','Zdjecia/Shiganshina/Shiganshina1.png','Zdjecia/Shiganshina/Shiganshina3.png')">
+                    <img src="Zdjecia/Shiganshina/Shiganshina.png">
+                    <div>
+                        <p>The Walls of Shiganshina</p>
+                    </div>
+                </div>
+          
+            </div>
+
+            <div id="Rzad_zdjec">
+                
+                <div id="Blok_zdjecia" onclick="zdjecie_popup('Zdjecia/FemaleTitan/Femaletitan.png')">
+                    <img src="Zdjecia/FemaleTitan/Femaletitan.png">
+                    <div>
+                        <p>Female Titan used in Attack on Titan: Untitled</p>
+                    </div>
+                </div>
+
+                <div id="Blok_zdjecia" onclick="zdjecie_popup('Zdjecia/JawTitan/JawTitan6.png','Zdjecia/JawTitan/JawTitan1.png','Zdjecia/JawTitan/JawTitan.png','Zdjecia/JawTitan/JawTitan4.png','Zdjecia/JawTitan/JawTitan3.png')">
+                    <img src="Zdjecia/JawTitan/JawTitan6.png">
+                    <div>
+                        <p>The Jaw Titan</p>
+                    </div>
+                </div>
+          
+            </div>
+
+            <hr><h2>Other Projects</h2>
+
+            <div id="Rzad_zdjec">
+                
+                <div id="Blok_zdjecia" onclick="zdjecie_popup('Zdjecia/LightSaber/1.png','Zdjecia/LightSaber/3.png','Zdjecia/LightSaber/2.png','Zdjecia/LightSaber/Lightsaberwatermark.png')">
+                    <img src="Zdjecia/LightSaber/1.png">
+                    <div>
+                        <p>Lightsaber from Star Wars</p>
+                    </div>
+                </div>
+
+                <div id="Blok_zdjecia" onclick="zdjecie_popup('Zdjecia/DesertEagle/DesertEagle.png','Zdjecia/DesertEagle/DesertEagle2.png')">
+                    <img src="Zdjecia/DesertEagle/DesertEagle.png">
+                    <div>
+                        <p>Desert Eagle</p>
+                    </div>
+                </div>
+
+                <div id="Blok_zdjecia" onclick="zdjecie_popup('Zdjecia/CommunicatorSTARWARS/Com.png','Zdjecia/CommunicatorSTARWARS/Communicatormetalic.png','Zdjecia/CommunicatorSTARWARS/Communicator.png','Zdjecia/CommunicatorSTARWARS/Comunicator.png')">
+                    <img src="Zdjecia/CommunicatorSTARWARS/Com.png">
+                    <div>
+                        <p>Hologram communicator from Star Wars</p>
+                    </div>
+                </div>
+
+                <div id="Blok_zdjecia" onclick="zdjecie_popup('Zdjecia/Tree/Trees2.png')">
+                    <img src="Zdjecia/Tree/Trees2.png">
+                    <div>
+                        <p>Realistic Tree</p>
+                    </div>
+                </div>
+          
+            </div>
+
+        </div>
+
+        <div id="Scripting" style="display: none;">
+
+                <h1>W.I.P</h1>
+                <p>Soon my works will be added here</p>
+
+            </div>
+    
+            
+    </div>
+</body>
+<script>
+    var przycisk_About_me = document.getElementById("przycisk_About_me");
+    var przycisk_Modelling = document.getElementById("przycisk_Modelling");
+    var przycisk_Programming = document.getElementById("przycisk_Programming");
+    var przycisk_Contact_me = document.getElementById("przycisk_Contact_me");
+
+    var zakladka_About_me = document.getElementById("About_Me");
+    var zakladka_Contact_me = document.getElementById("Contact_Me");
+    var zakladka_Modelling = document.getElementById("Modelling");
+    var zakladka_Programming = document.getElementById("Scripting");
+
+    var wyskakujace_zdjecie_TLO = document.getElementById("wyskakujace_zdjecie_TLO");
+    
+    var aktualna_zakladka = zakladka_About_me;
+
+    function zmiana_zakladki(element) {
+        
+        aktualna_zakladka.style.display = "none";
+
+        if(aktualna_zakladka == element){
+            console.log("otwarta ta sama zakladka");
+            element.style.display = "block";
+        }else {
+
+            element.style.display = "block";
+        const height = element.scrollHeight + "px";
+        element.style.height = "0"; // start wysokości 0
+
+        // wymuszamy zmianę stylu w kolejnym ticku, by transition zadziałało
+        requestAnimationFrame(() => {
+            element.style.height = height;
+        });
+
+        element.addEventListener("transitionend", () => {
+            element.style.height = "auto"; // po animacji daj auto, by elastycznie działało
+        }, { once: true });
+
+
+            aktualna_zakladka = element; 
+            
+        }
+
+    }
+
+    var wyskakujace_zdjecie = document.getElementById("wyskakujace_zdjecie");
+    var wyskakujace_zdjecie_kontener = document.getElementById("wyskakujace_zdjecie_kontener");
+
+    wyskakujace_zdjecie.style.opacity = 0;
+    wyskakujace_zdjecie.style.zIndex = -100;
+
+    function zdjecie_popup(zdjecie1,zdjecie2,zdjecie3,zdjecie4,zdjecie5,zdjecie6) {
+        var Nowe_zdjecie = document.createElement("img");
+        var Lewy_Przycisk = document.createElement("label");
+        var Prawy_Przycisk = document.createElement("label");
+        var X = document.createElement("label");
+
+        X.innerText = "X"
+        Lewy_Przycisk.innerText = "<";
+        Prawy_Przycisk.innerText = ">";
+
+        X.style.color = "red";
+        
+
+        var Wszystkie_zdjecia = [zdjecie1,zdjecie2,zdjecie3,zdjecie4,zdjecie5,zdjecie6]; 
+
+        Nowe_zdjecie.src = zdjecie1;
+        wyskakujace_zdjecie.classList.add("showup");
+
+        wyskakujace_zdjecie.appendChild(X);
+        wyskakujace_zdjecie_kontener.appendChild(Lewy_Przycisk);
+        wyskakujace_zdjecie_kontener.appendChild(Nowe_zdjecie);
+        wyskakujace_zdjecie_kontener.appendChild(Prawy_Przycisk);
+        wyskakujace_zdjecie.style.opacity = 1;
+        wyskakujace_zdjecie.style.zIndex = 100;
+
+        var numer_zdjecia = 0;
+
+        console.log(zdjecie3);
+
+        Prawy_Przycisk.addEventListener("click", () => {
+
+        let znalezione = false;
+        let start = numer_zdjecia;
+
+            while (!znalezione) {
+                numer_zdjecia += 1;
+                if (numer_zdjecia >= Wszystkie_zdjecia.length) {
+                    numer_zdjecia = 0;
+                }
+
+        if (Wszystkie_zdjecia[numer_zdjecia]) {
+            znalezione = true;
+        }
+
+        if (numer_zdjecia === start) break;
+    }
+
+    Nowe_zdjecie.src = Wszystkie_zdjecia[numer_zdjecia];
+    console.log("Pokazuję zdjęcie nr:", numer_zdjecia);
+});
+
+        Lewy_Przycisk.addEventListener("click", () => {
+            numer_zdjecia -= 1;
+
+            if (numer_zdjecia < 0) {
+                numer_zdjecia = Wszystkie_zdjecia.length - 1;
+            }
+
+            while (!Wszystkie_zdjecia[numer_zdjecia]) {
+                numer_zdjecia -= 1;
+
+                if (numer_zdjecia < 0) {
+                    numer_zdjecia = Wszystkie_zdjecia.length - 1;
+                }
+            }
+
+            Nowe_zdjecie.src = Wszystkie_zdjecia[numer_zdjecia];
+            console.log("Pokazuję zdjęcie nr:", numer_zdjecia);
+        });
+
+
+        X.addEventListener("click", ()=>{
+            wyskakujace_zdjecie.classList.add("showdown");
+
+            setTimeout(zamykanie_tla, 500);
+
+            function zamykanie_tla(){
+            wyskakujace_zdjecie.style.opacity = 0;
+            wyskakujace_zdjecie.style.zIndex = -100;
+
+            wyskakujace_zdjecie.removeChild(X);
+            wyskakujace_zdjecie_kontener.removeChild(Lewy_Przycisk);
+            wyskakujace_zdjecie_kontener.removeChild(Nowe_zdjecie);
+            wyskakujace_zdjecie_kontener.removeChild(Prawy_Przycisk);
+
+            wyskakujace_zdjecie.classList.remove("showup");
+            wyskakujace_zdjecie.classList.remove("showdown");
+            }
+        });
+    }
+
+
+    var kolor1 = 'rgb(44, 171, 86)';
+    
+    // function([string1, string2],target id,[color1,color2])    
+ consoleText(['Roblox Developer', 'Always on Time!', 'Scripter','Modeller'], 'text',[kolor1,kolor1,kolor1,kolor1]);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 3000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+    
+</script>
+</html>
